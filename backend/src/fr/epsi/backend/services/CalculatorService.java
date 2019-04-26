@@ -1,5 +1,8 @@
-package java.fr.epsi.backend.services;
+package fr.epsi.backend.services;
 
+import org.springframework.stereotype.Service;
+
+@Service("CalculatorService")
 public class CalculatorService {
 
     public CalculatorService() {
