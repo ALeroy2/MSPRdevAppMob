@@ -13,7 +13,7 @@ public class CalculatorService {
     }
 
     public float getNetBuyingPrice(float brut, float discountRate) {
-        return brut * (1 - discountRate);
+        return brut * ((100 - discountRate)/100);
     }
 
     public float getNetSellingPrice(float netBuyingPrice, float multiplicationCoeff) {
