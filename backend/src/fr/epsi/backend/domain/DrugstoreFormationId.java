@@ -7,10 +7,10 @@ import java.io.Serializable;
 @Embeddable
 public class DrugstoreFormationId implements Serializable {
 
-    @Column(name = "drugstore_id")
-    private Long drugstoreId;
     @Column(name = "formation_id")
     private Long formationId;
+    @Column(name = "drugstore_id")
+    private Long drugstoreId;
 
     public DrugstoreFormationId() {
     }

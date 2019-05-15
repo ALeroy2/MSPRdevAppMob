@@ -11,14 +11,14 @@ public class ProductPriceId implements Serializable {
     private long productId;
 
     @Column(name = "drugstore_id")
-    private long drugstore_id;
+    private long drugstoreId;
 
     public ProductPriceId() {
     }
 
-    public ProductPriceId(long productId, long drugstore_id) {
+    public ProductPriceId(long productId, long drugstoreId) {
         this.productId = productId;
-        this.drugstore_id = drugstore_id;
+        this.drugstoreId = drugstoreId;
     }
 
     public long getProductId() {
@@ -30,10 +30,10 @@ public class ProductPriceId implements Serializable {
     }
 
     public long getDrugstore_id() {
-        return drugstore_id;
+        return drugstoreId;
     }
 
-    public void setDrugstore_id(long drugstore_id) {
-        this.drugstore_id = drugstore_id;
+    public void setDrugstore_id(long drugstoreId) {
+        this.drugstoreId = drugstoreId;
     }
 }

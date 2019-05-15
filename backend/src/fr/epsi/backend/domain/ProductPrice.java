@@ -52,7 +52,13 @@ public class ProductPrice implements Serializable {
     }
 
     public void setDrugstore(Drugstore drugstore) {
+        if (this.drugstore != null) {
+            this.drugstore.getProductPrices().remove(this);
+        }
         this.drugstore = drugstore;
+        if (this.drugstore != null) {
+            this.drugstore.getProductPrices().add(this);
+        }
     }
 
     public Product getProduct() {
@@ -60,6 +66,12 @@ public class ProductPrice implements Serializable {
     }
 
     public void setProduct(Product product) {
+        if (this.product != null) {
+            this.product.getDrugstorePrices().remove(this);
+        }
         this.product = product;
+        if (this.product != null) {
+            this.product.getDrugstorePrices().add(this);
+        }
     }
 }

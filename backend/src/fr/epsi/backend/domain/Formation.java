@@ -49,4 +49,6 @@ public class Formation implements Serializable {
     public void setDrugstores(Set<DrugstoreFormation> drugstores) {
         this.drugstores = drugstores;
     }
+
+    public void addDrugstore(DrugstoreFormation drugstoreFormation) { drugstoreFormation.setFormation(this);}
 }

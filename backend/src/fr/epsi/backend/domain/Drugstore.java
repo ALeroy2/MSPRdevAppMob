@@ -82,4 +82,16 @@ public class Drugstore implements Serializable {
     public void setProducts(Set<DrugstoreProduct> products) {
         this.products = products;
     }
+
+    public void addDrugstoreFormation(DrugstoreFormation drugstoreFormation) {
+        drugstoreFormation.setDrugstore(this);
+    }
+
+    public void addProductPrice(ProductPrice productPrice) {
+        productPrice.setDrugstore(this);
+    }
+
+    public void addDrugstoreProduct(DrugstoreProduct drugstoreProduct) {
+        drugstoreProduct.setDrugstore(this);
+    }
 }

@@ -12,12 +12,12 @@ public class DrugstoreFormation implements Serializable {
     DrugstoreFormationId pk;
 
     @ManyToOne
-    @MapsId("drugstoreId")
-    private Drugstore drugstore;
-
-    @ManyToOne
     @MapsId("formationId")
     private Formation formation;
+
+    @ManyToOne
+    @MapsId("drugstoreId")
+    private Drugstore drugstore;
 
     @Column(name = "drugstore_formation_date", nullable = false)
     private Date dateDrugstoreFormation;
@@ -53,7 +53,13 @@ public class DrugstoreFormation implements Serializable {
     }
 
     public void setDrugstore(Drugstore drugstore) {
+        if (this.drugstore != null) {
+            this.drugstore.getFormations().remove(this);
+        }
         this.drugstore = drugstore;
+        if (this.drugstore != null) {
+            this.drugstore.getFormations().add(this);
+        }
     }
 
     public Formation getFormation() {
@@ -61,6 +67,12 @@ public class DrugstoreFormation implements Serializable {
     }
 
     public void setFormation(Formation formation) {
+        if (this.formation != null) {
+            this.formation.getDrugstores().remove(this);
+        }
         this.formation = formation;
+        if (this.formation != null) {
+            this.formation.getDrugstores().add(this);
+        }
     }
 }

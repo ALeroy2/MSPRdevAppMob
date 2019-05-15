@@ -61,4 +61,8 @@ public class Product implements Serializable {
     public void setDrugstores(Set<DrugstoreProduct> drugstores) {
         this.drugstores = drugstores;
     }
+
+    public void addDrugstorePrice(ProductPrice productPrice) { productPrice.setProduct(this);}
+
+    public void addDrugstore(DrugstoreProduct drugstoreProduct) { drugstoreProduct.setProduct(this); }
 }
