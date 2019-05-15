@@ -1,13 +1,13 @@
 package fr.epsi.backend.controllers;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import fr.epsi.backend.services.CalculatorService;
 
-@Controller
-@RequestMapping("/calculator")
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/calculatorController")
 public class CalculatorController {
     private CalculatorService calculatorService;
 
@@ -15,23 +15,27 @@ public class CalculatorController {
         this.calculatorService = new CalculatorService();
     }
 
-    @GetMapping("/discountRate")
-    public float getDiscountRate(float net, float brut) {
+    @RequestMapping("/discountRate")
+    public float getDiscountRate(@RequestParam(value = "net") float net
+                                , @RequestParam(value = "brut") float brut) {
         return this.calculatorService.getDiscountRate(net, brut);
     }
 
-    @GetMapping("/netBuyingPrice")
-    public float getNetBuyingPrice(float brut, float discountRate) {
+    @RequestMapping("/netBuyingPrice")
+    public float getNetBuyingPrice(@RequestParam(value = "brut") float brut
+                                    , @RequestParam(value = "discountRate") float discountRate) {
         return this.calculatorService.getNetBuyingPrice(brut, discountRate);
     }
 
-    @GetMapping("/netSellingPrice")
-    public float getNetSellingPrice(float netBuyingPrice, float multiplicationCoeff) {
+    @RequestMapping("/netSellingPrice")
+    public float getNetSellingPrice(@RequestParam(value = "netBuyingPrice") float netBuyingPrice
+                                    , @RequestParam(value = "multiplicationCoeff") float multiplicationCoeff) {
         return this.calculatorService.getNetSellingPrice(netBuyingPrice, multiplicationCoeff);
     }
 
-    @GetMapping("/multiplicationCoeff")
-    public float getMultiplicationCoeff(float netSellingPrice, float netBuyingPrice) {
+    @RequestMapping("/multiplicationCoeff")
+    public float getMultiplicationCoeff(@RequestParam(value = "netSellingPrice") float netSellingPrice
+                                        , @RequestParam(value = "netBuyingPrice") float netBuyingPrice) {
         return this.calculatorService.getMultiplicationCoeff(netSellingPrice, netBuyingPrice);
     }
 }
