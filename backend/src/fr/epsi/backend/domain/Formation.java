@@ -15,7 +15,7 @@ public class Formation implements Serializable {
     @Column(nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "formation")
+    @OneToMany(mappedBy = "formation", cascade = CascadeType.ALL)
     private Set<DrugstoreFormation> drugstores = new HashSet<DrugstoreFormation>();
 
     public Formation() {

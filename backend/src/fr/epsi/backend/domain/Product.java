@@ -14,20 +14,28 @@ public class Product implements Serializable {
     private Long id;
     @Column(nullable = false)
     private String name;
+    @Column(nullable = false)
+    private float price;
 
-    @OneToMany(mappedBy = "product")
-    private Set<ProductPrice> drugstorePrices = new HashSet<ProductPrice>();
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private Set<DrugstoreProductSell> drugstoresSell = new HashSet<>();
 
-    @OneToMany(mappedBy = "product")
-    private Set<DrugstoreProduct> drugstores = new HashSet<DrugstoreProduct>();
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private Set<DrugstoreProductBuy> drugstoresBuy = new HashSet<>();
 
     public Product() {
     }
 
-    public Product(String name, Set<ProductPrice> drugstorePrices, Set<DrugstoreProduct> drugstores) {
+    public Product(String name, float price) {
         this.name = name;
-        this.drugstorePrices = drugstorePrices;
-        this.drugstores = drugstores;
+        this.price = price;
+    }
+
+    public Product(String name, float price, Set<DrugstoreProductSell> drugstoresSell, Set<DrugstoreProductBuy> drugstoresBuy) {
+        this.name = name;
+        this.price = price;
+        this.drugstoresSell = drugstoresSell;
+        this.drugstoresBuy = drugstoresBuy;
     }
 
     public Long getId() {
@@ -46,23 +54,35 @@ public class Product implements Serializable {
         this.name = name;
     }
 
-    public Set<ProductPrice> getDrugstorePrices() {
-        return drugstorePrices;
+    public float getPrice() {
+        return price;
     }
 
-    public void setDrugstorePrices(Set<ProductPrice> drugstorePrices) {
-        this.drugstorePrices = drugstorePrices;
+    public void setPrice(float price) {
+        this.price = price;
     }
 
-    public Set<DrugstoreProduct> getDrugstores() {
-        return drugstores;
+    public Set<DrugstoreProductSell> getDrugstoresSell() {
+        return drugstoresSell;
     }
 
-    public void setDrugstores(Set<DrugstoreProduct> drugstores) {
-        this.drugstores = drugstores;
+    public void setDrugstoresSell(Set<DrugstoreProductSell> drugstoresSell) {
+        this.drugstoresSell = drugstoresSell;
     }
 
-    public void addDrugstorePrice(ProductPrice productPrice) { productPrice.setProduct(this);}
+    public Set<DrugstoreProductBuy> getDrugstoresBuy() {
+        return drugstoresBuy;
+    }
 
-    public void addDrugstore(DrugstoreProduct drugstoreProduct) { drugstoreProduct.setProduct(this); }
+    public void setDrugstoresBuy(Set<DrugstoreProductBuy> drugstoresBuy) {
+        this.drugstoresBuy = drugstoresBuy;
+    }
+
+    public void addDrugstoreBuy(DrugstoreProductBuy drugstoreProductBuy) {
+        drugstoreProductBuy.setProduct(this);
+    }
+
+    public void addDrugstoreSell(DrugstoreProductSell drugstoreProductSell) {
+        drugstoreProductSell.setProduct(this);
+    }
 }

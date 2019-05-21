@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/calculatorController")
 public class CalculatorController {
-    private CalculatorService calculatorService;
+    private CalculatorService calculatorService = new CalculatorService();
 
     public CalculatorController() {
-        this.calculatorService = new CalculatorService();
     }
 
     @RequestMapping("/discountRate")

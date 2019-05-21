@@ -8,36 +8,30 @@ import java.sql.Date;
 @Table(name = "drugstore_to_formation")
 public class DrugstoreFormation implements Serializable {
 
-    @EmbeddedId
-    DrugstoreFormationId pk;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @ManyToOne
-    @MapsId("formationId")
     private Formation formation;
 
     @ManyToOne
-    @MapsId("drugstoreId")
     private Drugstore drugstore;
 
-    @Column(name = "drugstore_formation_date", nullable = false)
+    @Column(name = "drugstore_to_formation_date", nullable = false)
     private Date dateDrugstoreFormation;
 
     public DrugstoreFormation() {
     }
 
-    public DrugstoreFormation(DrugstoreFormationId pk, Drugstore drugstore, Formation formation, Date dateDrugstoreFormation) {
-        this.pk = pk;
-        this.drugstore = drugstore;
+    public DrugstoreFormation(Formation formation, Drugstore drugstore, Date dateDrugstoreFormation) {
         this.formation = formation;
+        this.drugstore = drugstore;
         this.dateDrugstoreFormation = dateDrugstoreFormation;
     }
 
-    public DrugstoreFormationId getPk() {
-        return pk;
-    }
-
-    public void setPk(DrugstoreFormationId pk) {
-        this.pk = pk;
+    public Long getId() {
+        return id;
     }
 
     public Date getDateDrugstoreFormation() {

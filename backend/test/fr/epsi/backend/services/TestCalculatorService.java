@@ -1,6 +1,5 @@
 package fr.epsi.backend.services;
 
-import fr.epsi.backend.services.CalculatorService;
 import junit.framework.TestCase;
 import org.junit.Test;
 

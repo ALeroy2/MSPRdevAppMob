@@ -13,34 +13,53 @@ public class Drugstore implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false)
+    private String name;
+    @Column(nullable = false)
     private int latitude;
     @Column(nullable = false)
     private int longitude;
 
-    @OneToMany(mappedBy = "drugstore")
-    private Set<DrugstoreFormation> formations = new HashSet<DrugstoreFormation>();
+    @OneToMany(mappedBy = "drugstore", cascade = CascadeType.ALL)
+    private Set<DrugstoreFormation> formations = new HashSet<>();
 
-    @OneToMany(mappedBy = "drugstore")
-    private Set<ProductPrice> productPrices = new HashSet<ProductPrice>();
+    @OneToMany(mappedBy = "drugstore", cascade = CascadeType.ALL)
+    private Set<DrugstoreProductSell> productsSell = new HashSet<>();
 
-    @OneToMany(mappedBy = "drugstore")
-    private Set<DrugstoreProduct> products = new HashSet<DrugstoreProduct>();
+    @OneToMany(mappedBy = "drugstore", cascade = CascadeType.ALL)
+    private Set<DrugstoreProductBuy> productsBuy = new HashSet<>();
 
     public Drugstore() {
     }
 
-    public Drugstore(int latitude, int longitude, Set<DrugstoreFormation> formations, Set<ProductPrice> productPrices, Set<DrugstoreProduct> products) {
+    public Drugstore(String name, int latitude, int longitude) {
+        this.name = name;
+        this.latitude = latitude;
+        this.longitude = longitude;
+    }
+
+    public Drugstore(String name, int latitude, int longitude, Set<DrugstoreFormation> formations, Set<DrugstoreProductSell> productsSell, Set<DrugstoreProductBuy> productsBuy) {
+        this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
         this.formations = formations;
-        this.productPrices = productPrices;
-        this.products = products;
+        this.productsSell = productsSell;
+        this.productsBuy = productsBuy;
     }
 
-    public Long getId() { return id; }
+    public Long getId() {
+        return id;
+    }
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getLatitude() {
@@ -67,31 +86,38 @@ public class Drugstore implements Serializable {
         this.formations = formations;
     }
 
-    public Set<ProductPrice> getProductPrices() {
-        return productPrices;
+    public Set<DrugstoreProductSell> getProductsSell() {
+        return productsSell;
     }
 
-    public void setProductPrices(Set<ProductPrice> productPrices) {
-        this.productPrices = productPrices;
+    public void setProductsSell(Set<DrugstoreProductSell> productsSell) {
+        this.productsSell = productsSell;
     }
 
-    public Set<DrugstoreProduct> getProducts() {
-        return products;
+    public Set<DrugstoreProductBuy> getProductsBuy() {
+        return productsBuy;
     }
 
-    public void setProducts(Set<DrugstoreProduct> products) {
-        this.products = products;
+    public void setProductsBuy(Set<DrugstoreProductBuy> productsBuy) {
+        this.productsBuy = productsBuy;
     }
 
-    public void addDrugstoreFormation(DrugstoreFormation drugstoreFormation) {
+    public void addProductBuy(DrugstoreProductBuy drugstoreProductBuy) {
+        drugstoreProductBuy.setDrugstore(this);
+    }
+
+    public void addProductSell(DrugstoreProductSell drugstoreProductSell) {
+        drugstoreProductSell.setDrugstore(this);
+    }
+
+    public void addFormation(DrugstoreFormation drugstoreFormation) {
         drugstoreFormation.setDrugstore(this);
     }
 
-    public void addProductPrice(ProductPrice productPrice) {
-        productPrice.setDrugstore(this);
-    }
-
-    public void addDrugstoreProduct(DrugstoreProduct drugstoreProduct) {
-        drugstoreProduct.setDrugstore(this);
+    public float getDistance(float longitude, float latitude) {
+        float x = (float) ((this.longitude - longitude) * Math.cos((latitude + this.latitude) / 2));
+        float y = latitude - this.latitude;
+        float z = (float) Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+        return (float) (1.852 * z);
     }
 }
