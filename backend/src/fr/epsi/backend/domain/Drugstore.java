@@ -115,9 +115,16 @@ public class Drugstore implements Serializable {
     }
 
     public float getDistance(float longitude, float latitude) {
-        float x = (float) ((this.longitude - longitude) * Math.cos((latitude + this.latitude) / 2));
-        float y = latitude - this.latitude;
-        float z = (float) Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
-        return (float) (1.852 * z);
+        float latitude1 = (float) (latitude * Math.PI / 180);
+        float latitude2 = (float) (this.latitude * Math.PI / 180);
+
+        float longitude1 = (float) (longitude * Math.PI / 180);
+        float longitude2 = (float) (latitude * Math.PI / 180);
+
+        float R = 6371f;
+        float d = (float) (R * Math.acos(Math.cos(latitude1) * Math.cos(latitude2) *
+                        Math.cos(longitude2 - longitude1) + Math.sin(latitude1) *
+                        Math.sin(latitude2)));
+        return d;
     }
 }
