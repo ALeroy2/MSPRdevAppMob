@@ -3,6 +3,9 @@ package fr.epsi.backend.services;
 import junit.framework.TestCase;
 import org.junit.Test;
 
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+
 public class TestCalculatorService extends TestCase {
 
     @Test
@@ -10,7 +13,7 @@ public class TestCalculatorService extends TestCase {
         float net = 1000;
         float brut = 1200;
         float calcul = (1 - net / brut) * 100;
-        assertEquals(calcul, new CalculatorService().getDiscountRate(net, brut));
+        assertThat(calcul, is(new CalculatorService().getDiscountRate(net, brut)));
     }
 
     @Test
@@ -18,7 +21,7 @@ public class TestCalculatorService extends TestCase {
         float brut = 1000;
         float discountRate = 5.2f;
         float calcul = brut * ((100 - discountRate)/100);
-        assertEquals(calcul, new CalculatorService().getNetBuyingPrice(brut, discountRate));
+        assertThat(calcul, is(new CalculatorService().getNetBuyingPrice(brut, discountRate)));
     }
 
     @Test
@@ -26,7 +29,7 @@ public class TestCalculatorService extends TestCase {
         float netBuyingPrice = 150;
         float multiplicationCoeff = 2.5f;
         float calcul = netBuyingPrice * multiplicationCoeff;
-        assertEquals(calcul, new CalculatorService().getNetSellingPrice(netBuyingPrice, multiplicationCoeff));
+        assertThat(calcul, is(new CalculatorService().getNetSellingPrice(netBuyingPrice, multiplicationCoeff)));
     }
 
     @Test
@@ -34,6 +37,6 @@ public class TestCalculatorService extends TestCase {
         float netSellingPrice = 1500;
         float netBuyingPrice = 1450;
         float calcul = netSellingPrice / netBuyingPrice;
-        assertEquals(calcul, new CalculatorService().getMultiplicationCoeff(netSellingPrice, netBuyingPrice));
+        assertThat(calcul, is(new CalculatorService().getMultiplicationCoeff(netSellingPrice, netBuyingPrice)));
     }
 }
