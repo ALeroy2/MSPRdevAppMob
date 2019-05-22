@@ -2,6 +2,7 @@ package fr.epsi.backend.controllers;
 
 import fr.epsi.backend.domain.Drugstore;
 import fr.epsi.backend.services.DrugstoreService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,10 +13,10 @@ import java.util.List;
 @RequestMapping("/drugstoreController")
 public class DrugstoreController {
 
-    private DrugstoreService drugstoreService;
+    @Autowired
+    DrugstoreService drugstoreService;
 
     public DrugstoreController() {
-        this.drugstoreService = new DrugstoreService();
     }
 
     @RequestMapping("/getDrugstore")

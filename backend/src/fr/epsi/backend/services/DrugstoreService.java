@@ -16,8 +16,7 @@ public class DrugstoreService {
     @Autowired
     IDrugstore dao;
 
-    public DrugstoreService() {
-    }
+    public DrugstoreService() {}
 
     public Drugstore getDrugstore(Long drugstoreId) {
         return dao.findById(drugstoreId).get();

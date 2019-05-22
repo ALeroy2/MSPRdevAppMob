@@ -2,6 +2,7 @@ package fr.epsi.backend.controllers;
 
 import fr.epsi.backend.domain.Product;
 import fr.epsi.backend.services.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/productController")
 public class ProductController {
 
-    private ProductService productService;
+    @Autowired
+    ProductService productService;
 
     public ProductController() {
-        this.productService = new ProductService();
     }
 
     @RequestMapping("/getProduct")

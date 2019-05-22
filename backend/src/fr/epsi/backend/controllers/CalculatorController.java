@@ -2,6 +2,7 @@ package fr.epsi.backend.controllers;
 
 import fr.epsi.backend.services.CalculatorService;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/calculatorController")
 public class CalculatorController {
-    private CalculatorService calculatorService = new CalculatorService();
+
+    @Autowired
+    CalculatorService calculatorService;
 
     public CalculatorController() {
     }

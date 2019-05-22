@@ -2,76 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d668d5d8-8cf0-479a-86e0-668a31eb4b1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_atteo_evo_inflector_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_rest_core_3_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_0_25_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/epsi/backend/controllers/DrugstoreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/epsi/backend/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductBuy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/epsi/backend/services/FormationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/epsi/backend/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/controllers/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/controllers/CalculatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IDrugstore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IDrugstore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IDrugstoreFormation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IDrugstoreProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IFormation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IFormation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/daI/IProductPrice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/dao/AbstractDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/dao/DrugstoreDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/dao/FormationDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/dao/ProductDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/domain/Drugstore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/domain/Drugstore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormationId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/domain/Formation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/domain/Formation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/domain/ProductPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductSell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/domain/ProductPriceId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/utils/HibernateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/backend-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/backend-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/backend-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/backend-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/controllers/CalculatorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/epsi/backend/controllers/CalculatorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IDrugstore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IDrugstore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IDrugstoreFormation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IDrugstoreProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IFormation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IFormation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/daI/IProductPrice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/dao/AbstractDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/dao/DrugstoreDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/dao/FormationDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/dao/ProductDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/Drugstore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/Drugstore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/DrugstoreFormation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/DrugstoreFormation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/DrugstoreProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/Formation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/Formation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/ProductPrice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/domain/ProductPriceId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/epsi/backend/utils/HibernateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IDrugstoreFormationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IDrugstoreProductTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IDrugstoreTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IDrugstoreTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IFormationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IFormationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IProductPriceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IProductTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/dao/IProductTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/services/TestCalculatorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fr/epsi/backend/services/TestCalculatorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreFormationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreProductTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IFormationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IFormationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IProductPriceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fr/epsi/backend/dao/IProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fr/epsi/backend/services/TestCalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fr/epsi/backend/services/TestCalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/controllers/DrugstoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/controllers/DrugstoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,46 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/daI/IDrugstore.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/Drugstore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/daI/IFormation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="50" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/daI/IProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="409">
+              <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,24 +37,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/DrugstoreController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="182">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,22 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductSell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,13 +58,89 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductBuy.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state relative-caret-position="259">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/FormationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/CalculatorService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/CalculatorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/services/TestDrugstoreService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/dao/IProductTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="15" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#823#824#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/java/fr/epsi/backend/services/CalculatorService.java" />
         <option value="$PROJECT_DIR$/src/java/fr/epsi/backend/Main.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/services/CalculatorService.java" />
         <option value="$PROJECT_DIR$/test/fr/espi/backend/services/TestCalculatorService.java" />
@@ -240,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/dao/DrugstoreDao.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/dao/FormationDao.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/dao/ProductDao.java" />
-        <option value="$PROJECT_DIR$/test/fr/epsi/backend/services/TestCalculatorService.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/daI/IProduct.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/daI/IFormation.java" />
         <option value="$PROJECT_DIR$/test/fr/epsi/backend/dao/IFormationTest.java" />
@@ -253,11 +199,9 @@
         <option value="$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreFormationTest.java" />
         <option value="$PROJECT_DIR$/test/fr/epsi/backend/dao/IProductPriceTest.java" />
         <option value="$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreProductTest.java" />
-        <option value="$PROJECT_DIR$/src/fr/epsi/backend/controllers/CalculatorController.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/domain/Formation.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/services/ProductService.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/services/FormationService.java" />
-        <option value="$PROJECT_DIR$/src/fr/epsi/backend/controllers/ProductController.java" />
         <option value="$PROJECT_DIR$/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductId.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProduct.java" />
@@ -269,10 +213,14 @@
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductBuy.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductSell.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/daI/IDrugstore.java" />
-        <option value="$PROJECT_DIR$/src/fr/epsi/backend/domain/Drugstore.java" />
-        <option value="$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java" />
-        <option value="$PROJECT_DIR$/src/fr/epsi/backend/controllers/DrugstoreController.java" />
         <option value="$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormation.java" />
+        <option value="$PROJECT_DIR$/test/fr/epsi/backend/services/TestCalculatorService.java" />
+        <option value="$PROJECT_DIR$/src/fr/epsi/backend/domain/Drugstore.java" />
+        <option value="$PROJECT_DIR$/test/fr/epsi/backend/services/TestDrugstoreService.java" />
+        <option value="$PROJECT_DIR$/src/fr/epsi/backend/controllers/CalculatorController.java" />
+        <option value="$PROJECT_DIR$/src/fr/epsi/backend/controllers/DrugstoreController.java" />
+        <option value="$PROJECT_DIR$/src/fr/epsi/backend/controllers/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java" />
       </list>
     </option>
   </component>
@@ -303,6 +251,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -387,8 +337,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,38 +393,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IDrugstoreTest">
-    <configuration name="IDrugstoreProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.epsi.backend.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.epsi.backend.dao" />
-      <option name="MAIN_CLASS_NAME" value="fr.epsi.backend.dao.IDrugstoreProductTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IDrugstoreProductTest.getProductsFromDrugstore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.epsi.backend.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.epsi.backend.dao" />
-      <option name="MAIN_CLASS_NAME" value="fr.epsi.backend.dao.IDrugstoreProductTest" />
-      <option name="METHOD_NAME" value="getProductsFromDrugstore" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestDrugstoreService">
     <configuration name="IDrugstoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <extension name="coverage">
@@ -524,6 +441,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCalculatorService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.epsi.backend.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.epsi.backend.services" />
+      <option name="MAIN_CLASS_NAME" value="fr.epsi.backend.services.TestCalculatorService" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDrugstoreService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.epsi.backend.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.epsi.backend.services" />
+      <option name="MAIN_CLASS_NAME" value="fr.epsi.backend.services.TestDrugstoreService" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="fr.epsi.backend.Main" />
@@ -532,20 +479,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.IDrugstoreProductTest" />
-      <item itemvalue="JUnit.IDrugstoreProductTest.getProductsFromDrugstore" />
       <item itemvalue="JUnit.IDrugstoreTest.addDrugstoreProduct" />
       <item itemvalue="JUnit.IDrugstoreTest.addDrugstore" />
       <item itemvalue="JUnit.IDrugstoreTest" />
+      <item itemvalue="JUnit.TestCalculatorService" />
+      <item itemvalue="JUnit.TestDrugstoreService" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestDrugstoreService" />
+        <item itemvalue="JUnit.TestCalculatorService" />
         <item itemvalue="JUnit.IDrugstoreTest" />
         <item itemvalue="JUnit.IDrugstoreTest.addDrugstore" />
         <item itemvalue="JUnit.IDrugstoreTest.addDrugstoreProduct" />
-        <item itemvalue="JUnit.IDrugstoreProductTest.getProductsFromDrugstore" />
-        <item itemvalue="JUnit.IDrugstoreProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -569,50 +516,51 @@
       <workItem from="1558114483013" duration="3201000" />
       <workItem from="1558418768051" duration="1690000" />
       <workItem from="1558420613994" duration="8331000" />
-      <workItem from="1558457304346" duration="307000" />
+      <workItem from="1558457304346" duration="2459000" />
+      <workItem from="1558523386594" duration="1334000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IDrugstoreTest_addDrugstoreProduct - 2019.05.21 at 08h 46m 24s.xml">
-      <configuration name="IDrugstoreTest.addDrugstoreProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IDrugstoreTest_addDrugstoreProduct - 2019.05.21 at 08h 48m 05s.xml">
-      <configuration name="IDrugstoreTest.addDrugstoreProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IDrugstoreTest_addDrugstore - 2019.05.21 at 09h 40m 16s.xml">
-      <configuration name="IDrugstoreTest.addDrugstore" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IDrugstoreTest - 2019.05.21 at 09h 40m 31s.xml">
+    <history-entry file="IDrugstoreTest - 2019.05.21 at 18h 53m 45s.xml">
       <configuration name="IDrugstoreTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IDrugstoreTest - 2019.05.21 at 09h 43m 43s.xml">
-      <configuration name="IDrugstoreTest" configurationId="JUnit" />
+    <history-entry file="TestCalculatorService - 2019.05.21 at 18h 55m 53s.xml">
+      <configuration name="TestCalculatorService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IDrugstoreTest - 2019.05.21 at 09h 46m 46s.xml">
-      <configuration name="IDrugstoreTest" configurationId="JUnit" />
+    <history-entry file="TestCalculatorService - 2019.05.21 at 18h 57m 58s.xml">
+      <configuration name="TestCalculatorService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IDrugstoreTest - 2019.05.21 at 10h 18m 17s.xml">
-      <configuration name="IDrugstoreTest" configurationId="JUnit" />
+    <history-entry file="TestDrugstoreService - 2019.05.21 at 19h 08m 19s.xml">
+      <configuration name="TestDrugstoreService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IDrugstoreTest - 2019.05.21 at 10h 19m 19s.xml">
-      <configuration name="IDrugstoreTest" configurationId="JUnit" />
+    <history-entry file="TestDrugstoreService - 2019.05.21 at 19h 12m 06s.xml">
+      <configuration name="TestDrugstoreService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IDrugstoreTest - 2019.05.21 at 10h 20m 08s.xml">
-      <configuration name="IDrugstoreTest" configurationId="JUnit" />
+    <history-entry file="TestDrugstoreService - 2019.05.21 at 19h 13m 23s.xml">
+      <configuration name="TestDrugstoreService" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IDrugstoreTest - 2019.05.21 at 11h 03m 12s.xml">
-      <configuration name="IDrugstoreTest" configurationId="JUnit" />
+    <history-entry file="TestDrugstoreService - 2019.05.21 at 19h 17m 30s.xml">
+      <configuration name="TestDrugstoreService" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrugstoreService - 2019.05.21 at 19h 19m 40s.xml">
+      <configuration name="TestDrugstoreService" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrugstoreService - 2019.05.21 at 19h 26m 37s.xml">
+      <configuration name="TestDrugstoreService" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDrugstoreService - 2019.05.21 at 19h 28m 48s.xml">
+      <configuration name="TestDrugstoreService" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50652000" />
+    <option name="totallyTimeSpent" value="54138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28590605" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28993288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -622,7 +570,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -639,7 +587,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -667,24 +615,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/daI/IProductTest.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/dao/AbstractDao.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/dao/DrugstoreDao.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/dao/FormationDao.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/dao/ProductDao.java" />
-    <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/services/TestCalculatorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/utils/HibernateUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/ProductPrice.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/ProductPriceId.java" />
@@ -692,29 +627,6 @@
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/daI/IDrugstoreFormation.java" />
     <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreFormationTest.java" />
     <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/dao/IProductPriceTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/CalculatorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/CalculatorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -779,16 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/dao/IProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -812,40 +714,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/FormationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#460#461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductBuyId.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreProductSellId.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/Drugstore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/daI/IDrugstore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -866,34 +736,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/daI/IProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,42 +766,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/DrugstoreController.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormationId.java" />
+    <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/dao/IDrugstoreTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="68">
+          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormationId.java">
+    <entry file="file://$PROJECT_DIR$/backend.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/services/TestCalculatorService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="85">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/dao/IProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/DrugstoreFormation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="51">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#823#824#0" expanded="true" />
             <element signature="e#848#849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fr/epsi/backend/services/TestDrugstoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/FormationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/CalculatorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/CalculatorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/DrugstoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/controllers/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/domain/Drugstore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="44" column="41" lean-forward="true" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/epsi/backend/services/DrugstoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
