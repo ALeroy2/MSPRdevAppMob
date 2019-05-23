@@ -3,10 +3,8 @@ package fr.epsi.backend.controllers;
 import fr.epsi.backend.domain.User;
 import fr.epsi.backend.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/userController")
@@ -15,13 +13,14 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping("/signUp")
-    public void addUser(@RequestParam(name = "firstname") String firstname
-                        , @RequestParam(name = "lastname") String lastname
-                        , @RequestParam(name = "email") String email
-                        , @RequestParam(name = "password") String password) {
+    @Autowired
+    PasswordEncoder encoder;
 
-        User user = new User(firstname, lastname, email, new BCryptPasswordEncoder().encode(password));
+    // @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/signUp")
+    public Long addUser(@RequestBody User user) {
+        user.setPassword(encoder.encode(user.getPassword()));
         this.userService.addUser(user);
+        return user.getId();
     }
 }

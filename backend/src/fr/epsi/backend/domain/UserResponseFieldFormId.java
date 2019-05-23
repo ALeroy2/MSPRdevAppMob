@@ -7,8 +7,8 @@ import java.io.Serializable;
 @Embeddable
 public class UserResponseFieldFormId implements Serializable {
 
-    @Column(name = "user_email")
-    private String userEmail;
+    @Column(name = "user_id")
+    private Long userId;
     @Column(name = "response_id")
     private Long responseId;
     @Column(name = "field_id")
@@ -19,12 +19,12 @@ public class UserResponseFieldFormId implements Serializable {
     public UserResponseFieldFormId() {
     }
 
-    public String getUserEmail() {
-        return userEmail;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public Long getResponseId() {

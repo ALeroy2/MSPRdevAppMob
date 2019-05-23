@@ -8,11 +8,15 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 public class AppAuthProvider extends DaoAuthenticationProvider {
 
     @Autowired
     UserService userDetailsService;
+
+    @Autowired
+    PasswordEncoder encoder;
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
@@ -21,7 +25,7 @@ public class AppAuthProvider extends DaoAuthenticationProvider {
         String password = auth.getCredentials()
                 .toString();
         UserDetails user = userDetailsService.loadUserByUsername(name);
-        if(!new BCryptPasswordEncoder().matches(password, user.getPassword())) {
+        if(!encoder.matches(password, user.getPassword())) {
             user = null;
         }
         if (user == null) {

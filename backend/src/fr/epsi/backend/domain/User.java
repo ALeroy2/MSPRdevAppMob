@@ -1,5 +1,6 @@
 package fr.epsi.backend.domain;
 
+import org.hibernate.annotations.NaturalId;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -10,15 +11,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "user")
+@Table(name = "utilisateur")
 public class User implements Serializable, UserDetails {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     @Column(nullable = false)
     private String firstname;
     @Column(nullable = false)
     private String lastname;
-    @Id
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String email;
     @Column(nullable = false)
     private String password;
@@ -34,6 +37,10 @@ public class User implements Serializable, UserDetails {
         this.lastname = lastname;
         this.email = email;
         this.password = password;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getFirstname() {

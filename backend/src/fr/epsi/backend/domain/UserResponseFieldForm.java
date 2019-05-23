@@ -11,7 +11,7 @@ public class UserResponseFieldForm implements Serializable {
     UserResponseFieldFormId pk;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @MapsId("userEmail")
+    @MapsId("userId")
     private User user;
 
     @ManyToOne(cascade = CascadeType.ALL)
