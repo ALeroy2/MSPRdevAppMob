@@ -22,6 +22,9 @@ public class Field implements Serializable {
     @OneToMany(mappedBy = "field", cascade = CascadeType.ALL)
     private Set<ResponseFieldForm> responseFieldForms = new HashSet<>();
 
+    @OneToMany(mappedBy = "field", cascade = CascadeType.ALL)
+    private Set<UserResponseFieldForm> userResponseFieldForms = new HashSet<>();
+
     public Field() {
     }
 

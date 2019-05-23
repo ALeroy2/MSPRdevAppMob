@@ -3,25 +3,28 @@ package fr.epsi.backend.domain;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "user")
 public class User implements Serializable, UserDetails {
 
+    @Column(nullable = false)
     private String firstname;
+    @Column(nullable = false)
     private String lastname;
-
     @Id
     @Column(nullable = false, unique = true)
     private String email;
-
+    @Column(nullable = false)
     private String password;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private Set<UserResponseFieldForm> userResponseFieldForms = new HashSet<>();
 
     public User() {
     }

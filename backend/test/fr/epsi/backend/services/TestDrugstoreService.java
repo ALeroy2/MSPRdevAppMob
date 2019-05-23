@@ -26,7 +26,7 @@ public class TestDrugstoreService extends TestCase {
     @Test
     public void testGetDrugstores() {
         for (int i = 0; i < 20; i++) {
-            Drugstore drugstore = new Drugstore("drugstore" + i, i * 2, i * 2);
+            Drugstore drugstore = new Drugstore("drugstore" + i, "Nantes", i * 2, i * 2);
             dao.save(drugstore);
         }
 

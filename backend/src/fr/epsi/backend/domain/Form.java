@@ -24,6 +24,9 @@ public class Form implements Serializable {
     @OneToMany(mappedBy = "form", cascade = CascadeType.ALL)
     private Set<ResponseFieldForm> responseFieldForms = new HashSet<>();
 
+    @OneToMany(mappedBy = "form", cascade = CascadeType.ALL)
+    private Set<UserResponseFieldForm> userResponseFieldForms = new HashSet<>();
+
     public Form() {
     }
 

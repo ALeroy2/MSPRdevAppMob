@@ -15,6 +15,8 @@ public class Drugstore implements Serializable {
     @Column(nullable = false)
     private String name;
     @Column(nullable = false)
+    private String city;
+    @Column(nullable = false)
     private int latitude;
     @Column(nullable = false)
     private int longitude;
@@ -31,8 +33,9 @@ public class Drugstore implements Serializable {
     public Drugstore() {
     }
 
-    public Drugstore(String name, int latitude, int longitude) {
+    public Drugstore(String name, String city, int latitude, int longitude) {
         this.name = name;
+        this.city = city;
         this.latitude = latitude;
         this.longitude = longitude;
     }
@@ -60,6 +63,14 @@ public class Drugstore implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public int getLatitude() {

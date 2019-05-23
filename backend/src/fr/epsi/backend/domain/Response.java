@@ -15,6 +15,9 @@ public class Response implements Serializable {
     @OneToMany(mappedBy = "response", cascade = CascadeType.ALL)
     private Set<ResponseFieldForm> responseFieldForms = new HashSet<>();
 
+    @OneToMany(mappedBy = "response", cascade = CascadeType.ALL)
+    private Set<UserResponseFieldForm> userResponseFieldForms = new HashSet<>();
+
     private String name;
 
     public Response() {

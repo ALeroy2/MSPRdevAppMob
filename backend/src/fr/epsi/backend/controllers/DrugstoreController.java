@@ -30,6 +30,11 @@ public class DrugstoreController {
         return this.drugstoreService.getDrugstores(longitude, latitude);
     }
 
+    @RequestMapping("/getAllDrugstores")
+    public List<Drugstore> getAllDrugstores() {
+        return this.drugstoreService.getAllDrugstores();
+    }
+
     @RequestMapping("/postDrugstore")
     public void postDrugstore(@RequestParam(name = "drugstoreName") String name
                               , @RequestParam(name = "drugstoreLongitude") int longitude

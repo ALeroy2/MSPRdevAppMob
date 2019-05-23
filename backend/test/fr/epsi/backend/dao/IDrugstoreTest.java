@@ -35,6 +35,7 @@ public class IDrugstoreTest {
         drugstore.setLatitude(1000);
         drugstore.setLongitude(1000);
         drugstore.setName("Drugstore");
+        drugstore.setCity("Nantes");
         Drugstore saved = dao.save(drugstore);
         assertThat(drugstore.getName(), is(dao.findById(saved.getId()).get().getName()));
     }
@@ -43,8 +44,10 @@ public class IDrugstoreTest {
     public void mergeDrugstore() {
         Drugstore drugstore = new Drugstore();
         drugstore.setName("React");
+        drugstore.setCity("Nantes");
         drugstore = dao.save(drugstore);
         drugstore.setName("Node");
+        drugstore.setCity("Lille");
         Drugstore saved = dao.save(drugstore);
         assertThat(drugstore.getName(), is(dao.findById(saved.getId()).get().getName()));
     }

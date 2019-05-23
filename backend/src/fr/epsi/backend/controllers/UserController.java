@@ -24,10 +24,4 @@ public class UserController {
         User user = new User(firstname, lastname, email, new BCryptPasswordEncoder().encode(password));
         this.userService.addUser(user);
     }
-
-    @RequestMapping("/login")
-    public void connectUser(@RequestParam(name = "email") String email
-                            , @RequestParam(name = "password") String password) {
-        User user = this.userService.connectUser(email, new BCryptPasswordEncoder().encode(password));
-    }
 }

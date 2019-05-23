@@ -28,6 +28,10 @@ public class DrugstoreService {
         return drugstores.stream().limit(10).collect(Collectors.toList());
     }
 
+    public List<Drugstore> getAllDrugstores() {
+        return Lists.newArrayList(dao.findAll());
+    }
+
     public void postDrugstore(Drugstore drugstore) {
         dao.save(drugstore);
     }
