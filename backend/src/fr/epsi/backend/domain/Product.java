@@ -15,7 +15,9 @@ public class Product implements Serializable {
     @Column(nullable = false)
     private String name;
     @Column(nullable = false)
-    private float price;
+    private float productionPrice;
+    @Column(nullable = false)
+    private float wishSellProduct;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private Set<DrugstoreProductSell> drugstoresSell = new HashSet<>();
@@ -26,14 +28,16 @@ public class Product implements Serializable {
     public Product() {
     }
 
-    public Product(String name, float price) {
+    public Product(String name, float productionPrice, float wishSellProduct) {
         this.name = name;
-        this.price = price;
+        this.productionPrice = productionPrice;
+        this.wishSellProduct = wishSellProduct;
     }
 
-    public Product(String name, float price, Set<DrugstoreProductSell> drugstoresSell, Set<DrugstoreProductBuy> drugstoresBuy) {
+    public Product(String name, float productionPrice, float wishSellProduct, Set<DrugstoreProductSell> drugstoresSell, Set<DrugstoreProductBuy> drugstoresBuy) {
         this.name = name;
-        this.price = price;
+        this.productionPrice = productionPrice;
+        this.wishSellProduct = wishSellProduct;
         this.drugstoresSell = drugstoresSell;
         this.drugstoresBuy = drugstoresBuy;
     }
@@ -54,12 +58,20 @@ public class Product implements Serializable {
         this.name = name;
     }
 
-    public float getPrice() {
-        return price;
+    public float getProductionPrice() {
+        return productionPrice;
     }
 
-    public void setPrice(float price) {
-        this.price = price;
+    public void setProductionPrice(float productionPrice) {
+        this.productionPrice = productionPrice;
+    }
+
+    public float getWishSellProduct() {
+        return wishSellProduct;
+    }
+
+    public void setWishSellProduct(float wishSellProduct) {
+        this.wishSellProduct = wishSellProduct;
     }
 
     public Set<DrugstoreProductSell> getDrugstoresSell() {
