@@ -76,9 +76,9 @@ class Auth extends React.Component {
     const jwtToken = this.state.jwtToken !== null && this.state.jwtToken !== '' ? <Text>Token JWT : {this.state.jwtToken}</Text> : null;
     return (
       <Fragment>
-        <View style={{alignItems:'center'}}>
+        <View >
           <View>
-            <Text>{this.state.title}</Text>
+            <Text style={{fontWeight: 'bold', textAlign:'center', fontSize: 24}}>{this.state.title}{"\n"}</Text>
           </View>
           <View>
             <Text>Email :</Text>
